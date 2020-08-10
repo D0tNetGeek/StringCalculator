@@ -25,4 +25,4 @@ The method can take a string representing numbers separated by commas, and will 
 
 6. Numbers greater than 1000 should be ignored, so adding 2 + 1001 + 13 = 15.
 
-7. Allow multiple delimiters like this: “//[delim1][delim2]\n” for example “//*%\n1*2%3” should return
+7. Allow multiple delimiters like this: “//[delim1][delim2]\n” for example “//*%\n1*2%3” should return 6.
