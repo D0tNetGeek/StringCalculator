@@ -80,7 +80,9 @@ namespace StringCalculator.Tests
         [TestMethod]
         public void Given_When_A_Negative_Number_Then_Throw_Exception()
         {
-            Assert.ThrowsException<ArgumentOutOfRangeException>(() => strCalc.Add("-1, 2"));
+            var exception = Assert.ThrowsException<ArgumentOutOfRangeException>(() => strCalc.Add("-1, 2"));
+
+            Assert.IsTrue(exception.Message.Contains("-1"));
         }
     }
 }
